@@ -1,0 +1,13 @@
+# Python junk
+venv/
+__pycache__/
+*.pyc
+.env
+
+# React junk
+client/node_modules/
+client/dist/
+
+# System junk
+.DS_Store
+Thumbs.db
