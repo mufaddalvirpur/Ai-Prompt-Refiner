@@ -37,7 +37,7 @@ function App() {
 
     try {
       // Connecting to your Backend on Port 8080
-      const response = await axios.post('http://localhost:8080/refine', formData, {
+      const response = await axios.post('/api/refine', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
       setResult(response.data);

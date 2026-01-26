@@ -45,7 +45,7 @@ def extract_text_from_pdf(file_bytes) -> str:
         return f"Error reading PDF: {str(e)}"
 
 # --- THE MAIN ENDPOINT ---
-@app.post("/refine")
+@app.post("/api/refine")
 async def refine_prompt(
     text_input: Optional[str] = Form(None),
     files: List[UploadFile] = File(None)
